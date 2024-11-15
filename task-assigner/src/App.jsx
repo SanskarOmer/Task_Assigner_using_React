@@ -9,9 +9,8 @@ const App = () => {
     <>
      {/* <Login /> */}
      < EmployeeDashboard/>
-    
     </>
-     
+    
     
   )
 }
