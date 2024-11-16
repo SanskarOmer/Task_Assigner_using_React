@@ -11,8 +11,8 @@ const Login = () => {
   };
 
   return (
-    <div className='flex h-screen w-screen items-center justify-center bg-gradient-to-r from-teal-100 via-teal-50 to-teal-100'>
-      <div className='border border-gray-200 shadow-xl rounded-lg p-12 bg-white max-w-md w-full'>
+    <div className='flex h-screen w-screen items-center justify-center bg-[#1c1c1c] '>
+      <div className='border border-emerald-500 shadow-xl rounded-lg p-12 bg-white/30  max-w-md w-full backdrop-blur-sm '>
         <form
           onSubmit={(e) => {
             submitHandler(e);
