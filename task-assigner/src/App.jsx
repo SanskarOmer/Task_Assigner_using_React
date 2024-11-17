@@ -49,7 +49,7 @@ console.log(data)
   return (
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ''}
-      {user == 'admin' ? <AdminDashboard /> : (user == employee ? <EmployeeDashboard data={loggedInData} /> : null) }
+      {user == 'admin' ? <AdminDashboard /> : (user == 'employee' ? <EmployeeDashboard data={loggedInData} /> : null) }
     </>
     
     
