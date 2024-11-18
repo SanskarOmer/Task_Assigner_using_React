@@ -36,7 +36,6 @@ const App = () => {
          localStorage.setItem('loggedInUser', JSON.stringify({role:'employee'}))
        }
       }
-    
     else {
       alert("Invalid Credentials")
     }
@@ -44,8 +43,6 @@ const App = () => {
 
 
 const data =useContext(AuthContext)
-console.log(data)
-  
   return (
     <>
       {!user ? <Login handleLogin={handleLogin} /> : ''}
