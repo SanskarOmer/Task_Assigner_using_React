@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import { setLocalStorage } from '../../utils/localStorage'
 
 const Header = (props) => {
@@ -24,6 +25,9 @@ const Header = (props) => {
         <button onClick={logOutUser} className='bg-red-600 text-base font-medium text-white px-5 py-2 rounded-sm'>Log Out</button>
     </div>
   )
+}
+Header.propTypes = {
+  changeUser: PropTypes.func.isRequired,
 }
 
 export default Header
